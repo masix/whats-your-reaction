@@ -1,0 +1,12 @@
+{
+    "name": "masix/whats-your-reaction",
+    "description": "Share your reaction to a post, using nice looking badges",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Omar Ayoub",
+            "email": "omar@abstact.ma"
+        }
+    ],
+    "require": {}
+}

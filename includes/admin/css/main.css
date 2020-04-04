@@ -1,0 +1,21 @@
+.wyr-icon-items {
+  margin: 0 ;
+  list-style: none;
+  font-size: 0;
+}
+
+.wyr-icon-item {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 5px;
+
+  text-align: center;
+  vertical-align: top;
+
+  font-size: 14px;
+}
+
+.wyr-icon-item > label > span {
+  display: block;
+  margin: 0 auto 0.5em;
+}

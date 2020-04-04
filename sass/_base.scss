@@ -1,0 +1,139 @@
+@import "compass/css3";
+
+
+.wyr-reactions {
+    margin: 3rem 0;
+}
+
+
+.wyr-reaction {
+    display: block;
+    text-align: center;
+}
+
+.wyr-reaction-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 12px;
+
+    background: #ffda6a;
+    @include border-radius(50%);
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wyr-reaction-track {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+
+    background: #f2f2f2;
+
+    @include border-radius(6px);
+}
+
+.wyr-reaction-bar {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    #{$left}: 0;
+    #{$right}: 0;
+    background-color: #ff0036;
+
+    opacity: 0.2;
+
+    @include transition(
+        border-color 0.375s ease-in-out,
+        background-color 0.375s ease-in-out,
+        color 0.375s ease-in-out,
+        opacity 0.375s ease-in-out,
+        height 0.375s ease-in-out
+    );
+}
+
+
+.wyr-reaction-value {
+    position: relative;
+    z-index: 3;
+    line-height: 100px;
+
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+.wyr-reaction-button {
+    display: block;
+    padding: 8px 8px;
+    border-width: 2px;
+    margin-top: 6px;
+
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    border-style: solid;
+    @include border-radius(6px);
+
+    border-color: #ff0036;
+    background-color: #ff0036;
+    color: #fff;
+
+    border-color: #e6e6e6;
+    background-color: #e6e6e6;
+    color: #000;
+
+    @include transition(
+        border-color 0.375s ease-in-out,
+        background-color 0.375s ease-in-out,
+        color 0.375s ease-in-out,
+        opacity 0.375s ease-in-out
+    );
+}
+
+.wyr-reaction-label {
+    display: block;
+}
+
+
+
+.wyr-reaction-items {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -6px 1.5rem;
+    list-style: none;
+
+    font-size: 0;
+}
+
+.wyr-reaction-item {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    font-size: 1rem;
+
+    flex-grow: 1;
+
+    .wyr-reaction {
+        margin: 0 6px 1.5rem;
+    }
+}
+
+
+.wyr-reaction:hover,
+.wyr-reaction-voted {
+    .wyr-reaction-bar {
+        opacity: 1;
+    }
+
+    .wyr-reaction-button {
+        border-color: #ff0036;
+        background-color: #ff0036;
+        color: #fff;
+    }
+}
